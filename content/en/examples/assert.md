@@ -3,7 +3,7 @@ title: "assert"
 weight: 20
 draft: false
 ---
-To make sure things work, we use assert:
+To make sure things work, we use `assert`:
 
 ```rust {.codebox}
 fn main() {
@@ -11,7 +11,7 @@ fn main() {
 }
 ```
 
-The first argument of assert is the condition we want to check, and the second is a message we will see on the console if the condition is false.
+The first argument of `assert` is the condition we want to check, and the second is a message we will see on the console if the condition is false.
 
 Running this will yield:
 

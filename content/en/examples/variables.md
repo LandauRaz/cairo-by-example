@@ -4,9 +4,7 @@ weight: 30
 draft: false
 ---
 
-To store data in variables with the let keyword but you will not be able to change the value of said variables.
-
-if you need to change that data, it must be a mutable variable with let mut
+To store data in variables use the `let` keyword. If you need to change the stored data, the variable must be marked mutable using `let mut`:
 
 ```rust {.codebox}
 fn main() {
@@ -25,3 +23,11 @@ fn test_main() {
     main();
 }
 ```
+
+Running this will yield:
+
+```bash
+Run completed successfully, returning []
+```
+
+Try changing it so that the test fails.
