@@ -2,7 +2,6 @@
 title: "hello world"
 weight: 10
 draft: false
-run_command: "cairo-run --single-file"
 ---
 
 This is the source code of the traditional "Hello, World!" program:
