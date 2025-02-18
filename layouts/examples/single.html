@@ -7,25 +7,20 @@
     <summary><i>Try it out!</i></summary>
     <ol>
       <li>
-      Install the toolchain:<br>
-        <ul>
-          <li>
-            For macOS and Linux, run our script:
-          </li>
-            <pre>curl -sL https://raw.githubusercontent.com/lambdaclass/cairo-by-example/main/build/installer.sh | bash -s 2.2.0</pre>
-          <li>
-            For Windows and others, please see <a href="https://www.cairo-lang.org/docs/getting_started/prerequisits.html">the official guide</a>
-          </li>
-        </ul>
+        Install the toolchain:
+        <pre>curl --proto '=https' --tlsv1.2 -sSf https://sh.starkup.dev | sh</pre>
       </li>
       <li>
-      Run the example:
-      <ol>
-        <li>Copy the example into a <b>{{ .File.BaseFileName}}.cairo</b> file and run with:</li>
-        <pre>{{ printf "%s" .Params.run_command }} {{ .File.BaseFileName }}.cairo</pre>
+        Run the example:
+        <ol>
+          <li>Create a new Cairo project:</li>
+          <pre>scarb new {{ .File.BaseFileName }}</pre>
+          <li>Copy the example into the <b>{{ .File.BaseFileName}}/src/lib.cairo</b> file</li>
+          <li>Navigate into <b>hello_world</b> and execute <b>lib.cairo</b>:</li>
+          <pre>cd {{ .File.BaseFileName }} && scarb cairo-run</pre>
+        </ol>
+        </li>
       </ol>
-      </li>
-    </ol>
 </details>
 <br>
 
